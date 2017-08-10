@@ -1,0 +1,100 @@
+cd /home/utnso/Escritorio/tp-20132c-so-gt/memoria/Debug/
+make clean && make all
+
+export LD_LIBRARY_PATH=/home/utnso/Escritorio/tp-20132c-so-gt/memoria/Debug:/home/utnso/workspace/so-commons-library/Debug
+
+
+###################################CORRER PLATAFORMA########################################################
+
+cd /home/utnso/workspace/so-commons-library/Debug/
+make clean && make all
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+
+cd /home/utnso/workspace/Plataforma/Debug/
+make clean && make all
+
+./Plataforma /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/configPlataforma.txt /home/utnso/workspace/Plataforma/src/plataforma/koopa 
+
+
+#############################CORRER NIVEL################################################################
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Nivel/Debug
+make clean && make all
+./Nivel /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/Nivel2-1.txt
+
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Nivel/Debug
+make clean && make all
+./Nivel /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/Nivel1-1.txt
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Nivel/Debug
+make clean && make all
+./Nivel /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/Nivel8-8.txt
+
+
+
+######################## CORRER PERSONAJE #######################################################
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Personaje/Debug
+make clean && make all
+./Personaje /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/mario.txt
+
+
+########################CORRER OTRO PJ##########################################################
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Personaje/Debug
+make clean && make all
+./Personaje /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/luigi.txt
+
+
+############################## INTERBLOQUEO #######################################
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Nivel/Debug
+./Nivel  /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/interbloqueo/Nivel2-1.txt
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Personaje/Debug
+./Personaje /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/interbloqueo/mario.txt
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Personaje/Debug
+./Personaje /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/interbloqueo/luigi.txt
+
+
+
+
+
+############################## TESTS #######################################
+
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Nivel/Debug
+./Nivel /home/utnso/Escritorio/tp-20132c-so-gt/Tests/Test1/Nivel1-1.txt
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Personaje/Debug
+./Personaje /home/utnso/Escritorio/tp-20132c-so-gt/Tests/Test1/mario.txt
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Personaje/Debug
+./Personaje /home/utnso/Escritorio/tp-20132c-so-gt/Tests/Test1/luigi.txt
+
+
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Personaje/Debug
+./Personaje /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/Test1/mario.txt
+
+export LD_LIBRARY_PATH=/home/utnso/workspace/so-commons-library/Debug
+cd /home/utnso/workspace/Personaje/Debug
+./Personaje /home/utnso/Escritorio/tp-20132c-so-gt/Prueba1/Test1/luigi.txt
+
+
+

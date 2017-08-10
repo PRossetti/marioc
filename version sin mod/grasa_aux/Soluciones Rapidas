@@ -1,0 +1,54 @@
+para la carpeta Ubuntu (compartida con windows) poner por consola:
+	"sudo mount -t vboxsf Ubuntu /home/utnso/Escritorio/Ubuntu"
+
+Para correr un proyecto de consola:
+	eliminar algun archivo existente ---> "rm nombreArchivo"
+	hacer el .o  ---> " gcc nombre.c -o nombre"
+	ejecutar ---> "./nombre"
+
+Compilar cuando tienen ya un makefile:
+	(make clean)
+	make
+	./"nombre"
+
+Cuando no encuentra una biblioteca de la commons:
+	"export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/workspace/commons/Debug"
+
+
+
+------------------------------------------    EJEMPLO    FUSE    --------------------------------------------------------
+
+Para compilar el archivo fuse_example.c:
+	"gcc fuse_example.c -c -DFUSE_USE_VERSION=27 -D_FILE_OFFSET_BITS=64"
+
+Para linkear el archivo fuse_example.o:
+	"gcc fuse_example.o -o fuse_example -lpthread -lfuse"
+
+//Nota: antes de ejecutar ./fuse_example  tengo q crear una carpeta llamada tmp en donde se encuentra este archivo 
+Comando:
+	"mkdir /tmp"
+
+Para ejecutar el archivo fuse_example (ejecutable):
+	"./fuse_example ./tmp -f"
+
+------------------------------------------    FIN   EJEMPLO    FUSE    --------------------------------------------------------
+
+
+
+--------------------------------------------    Hacer prog desde consola -------------------------------------------------
+$nano nombre.c  ----> abre consola y programas
+$gcc nombre.c -o (nombre) -----> compilas
+$./nombre  ------> corres programa
+--------------------------------------------   Fin Hacer prog desde consola   ------------------------------------------
+
+
+------------------------------------------              PARA CORRER     grasa_SO_GT        ----------------------------------
+1) estar posicionado en /workspace/grasa_SO_GT/Debug
+2)(hacer una carpeta "tmp" si es que no existe)
+3)sudo umount ./tmp
+4)mount
+5)./grasa_SO_GT disco.bin ./tmp
+
+6) cuando termino de usar --> sudo umount ./tmp
+
+------------------------------------------      FIN   PARA CORRER     grasa_SO_GT        ----------------------------------
